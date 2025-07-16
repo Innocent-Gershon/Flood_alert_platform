@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "This repository contains the source code and documentation for the Inclusive Real-Time Flood Alert Platform, designed to provide timely and accessible flood alerts to vulnerable communities in Ghana.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/server.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +16,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Innocent-Gershon/Flood_alert_platform/issues"
   },

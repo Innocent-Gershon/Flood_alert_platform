@@ -1,0 +1,133 @@
+/* Layout */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #facc15;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  border-bottom: 1px solid #475569;
+  cursor: pointer;
+}
+
+/* Main Panel */
+.main-panel {
+  flex: 1;
+  padding: 30px;
+}
+
+.dashboard-header {
+  margin-bottom: 20px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Form */
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form button {
+  background: #2563eb;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #1e40af;
+}
+
+/* Alerts */
+.alert-list {
+  list-style: none;
+  padding: 0;
+}
+
+.alert-list li {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.badge.moderate {
+  background: #fde68a;
+}
+
+.badge.severe {
+  background: #f87171;
+  color: white;
+}
+
+.badge.extreme {
+  background: #991b1b;
+  color: white;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+}
